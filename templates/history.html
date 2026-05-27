@@ -1,37 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Donor History</title>
-    <link rel="stylesheet" href="/static/style.css">
-</head>
-<body>
+<h2>Donor History</h2>
 
-<div class="navbar">
-    <a href="/">Home</a>
-    <a href="/search">Search</a>
-    <a href="/donors">All Donors</a>
-    <a href="/history">History</a>
-    <a href="/logout">Logout</a>
+{% for d in donors %}
+<div class="card">
+<h3>{{d[1]}}</h3>
+<p>{{d[2]}} | {{d[3]}} | {{d[4]}}</p>
 </div>
-
-<h2>🕒 Donor History (Latest First)</h2>
-
-<table>
-<tr>
-<th>ID</th><th>Name</th><th>Blood Group</th><th>City</th><th>Phone</th>
-</tr>
-
-{% for r in data %}
-<tr>
-<td>{{ r[0] }}</td>
-<td>{{ r[1] }}</td>
-<td>{{ r[2] }}</td>
-<td>{{ r[3] }}</td>
-<td>{{ r[4] }}</td>
-</tr>
 {% endfor %}
-
-</table>
-
-</body>
-</html>

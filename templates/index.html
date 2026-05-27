@@ -1,42 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Home</title>
+    <title>Blood Donor Finder</title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
 
-<div class="navbar">
-    <a href="/">Home</a>
-    <a href="/search">Search</a>
-    <a href="/donors">All Donors</a>
-    <a href="/logout">Logout</a>
+<h1>🩸BLOOD DONOR FINDER SYSTEM</h1>
+
+<p class="tagline">
+SAVE LIFE – DONATE BLOOD❤️
+</p>
+
+<!-- TOP BUTTONS -->
+
+<div style="margin-bottom:20px;">
+
+<a href="/search">
+    <button style="width:220px;">🔍 Search Donor</button>
+</a>
+
+<a href="/donors">
+    <button style="width:220px;">🩸 Donor History</button>
+</a>
+
 </div>
 
-<h1>🩸 Blood Donor Finder System</h1>
+<!-- FORM CARD -->
 
-<div class="form-box">
+<div class="card">
+
 <form method="POST">
 
-    <input name="name" placeholder="Name" required>
+<input type="text" name="name" placeholder="Name" required>
 
-    <select name="blood_group" required>
-        <option value="">Select Blood Group</option>
-        <option>A+</option><option>A-</option>
-        <option>B+</option><option>B-</option>
-        <option>O+</option><option>O-</option>
-        <option>AB+</option><option>AB-</option>
-    </select>
+<select name="blood_group" required>
 
-    <input name="city" placeholder="City" required>
+    <option value="">Select Blood Group</option>
 
-    <input name="phone" placeholder="Phone (10 digits)" pattern="[0-9]{10}" required>
+    <option>A+</option>
+    <option>A-</option>
+    <option>B+</option>
+    <option>B-</option>
+    <option>O+</option>
+    <option>O-</option>
+    <option>AB+</option>
+    <option>AB-</option>
 
-    <button>Add Donor</button>
+</select>
+
+<input type="text" name="city" placeholder="City" required>
+
+<input type="text" name="phone" placeholder="10 Digit Phone" required>
+
+<button type="submit">
+    Add Donor
+</button>
+
 </form>
+
+<p style="color:green;">
+{{ msg }}
+</p>
+
 </div>
 
-<p class="msg">{{ msg }}</p>
+<br><br>
+
+<!-- LOGOUT BUTTON AT BOTTOM -->
+
+<a href="/logout">
+    <button style="width:220px; background:black;">
+        Logout
+    </button>
+</a>
 
 </body>
 </html>

@@ -1,51 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Search</title>
+    <title>Search Donor</title>
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
 
-<div class="navbar">
-    <a href="/">Home</a>
-    <a href="/search">Search</a>
-    <a href="/donors">All Donors</a>
-    <a href="/logout">Logout</a>
-</div>
+<h1>🔍 SEARCH DONOR</h1>
 
-<h2>Search Donor</h2>
+<div class="card">
 
-<div class="form-box">
 <form method="POST">
 
-    <select name="blood_group" required>
-        <option value="">Select Blood Group</option>
-        <option>A+</option><option>A-</option>
-        <option>B+</option><option>B-</option>
-        <option>O+</option><option>O-</option>
-        <option>AB+</option><option>AB-</option>
-    </select>
+<select name="blood_group">
 
-    <button>Search</button>
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>O+</option>
+<option>O-</option>
+<option>AB+</option>
+<option>AB-</option>
+
+</select>
+
+<button>Search</button>
+
 </form>
+
 </div>
 
+<h2>{{ message }}</h2>
+
 {% if data %}
+
 <table>
+
 <tr>
-<th>ID</th><th>Name</th><th>BG</th><th>City</th><th>Phone</th>
+<th>Name</th>
+<th>Blood Group</th>
+<th>City</th>
+<th>Phone</th>
+<th>Date & Time</th>
 </tr>
 
-{% for r in data %}
+{% for d in data %}
 <tr>
-<td>{{ r[0] }}</td>
-<td>{{ r[1] }}</td>
-<td>{{ r[2] }}</td>
-<td>{{ r[3] }}</td>
-<td>{{ r[4] }}</td>
+
+<td>{{ d[1] }}</td>
+<td>{{ d[2] }}</td>
+<td>{{ d[3] }}</td>
+<td>{{ d[4] }}</td>
+<td>{{ d[5] }}</td>
+
 </tr>
 {% endfor %}
+
 </table>
+
 {% endif %}
 
 </body>
