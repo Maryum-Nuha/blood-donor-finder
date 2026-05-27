@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/search">Search</a>
+    <a href="/donors">All Donors</a>
+    <a href="/logout">Logout</a>
+</div>
+
+<h1>🩸 Blood Donor Finder System</h1>
+
+<div class="form-box">
+<form method="POST">
+
+    <input name="name" placeholder="Name" required>
+
+    <select name="blood_group" required>
+        <option value="">Select Blood Group</option>
+        <option>A+</option><option>A-</option>
+        <option>B+</option><option>B-</option>
+        <option>O+</option><option>O-</option>
+        <option>AB+</option><option>AB-</option>
+    </select>
+
+    <input name="city" placeholder="City" required>
+
+    <input name="phone" placeholder="Phone (10 digits)" pattern="[0-9]{10}" required>
+
+    <button>Add Donor</button>
+</form>
+</div>
+
+<p class="msg">{{ msg }}</p>
+
+</body>
+</html>

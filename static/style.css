@@ -1,0 +1,92 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: linear-gradient(to right, #ffe6e6, #ffffff);
+    text-align: center;
+}
+
+h1 {
+    color: darkred;
+    font-size: 38px;
+    margin-top: 15px;
+}
+
+h2 {
+    color: #8B0000;
+    font-size: 28px;
+}
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(90deg, darkred, red);
+    padding: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* FORM */
+.form-box {
+    background: white;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.2);
+}
+
+input, select {
+    width: 85%;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 25px;
+    background: darkred;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: red;
+}
+
+/* TABLE (GOOD SIMPLE LOOK) */
+table {
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+    background: white;
+    border-collapse: collapse;
+    font-size: 18px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: darkred;
+    color: white;
+}
+
+.msg {
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Donors</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="/search">Search</a>
+    <a href="/donors">All Donors</a>
+    <a href="/logout">Logout</a>
+</div>
+
+<h1>🩸 Blood Donor Finder System</h1>
+<h2>All Donors</h2>
+
+<div class="donor-container">
+
+{% for r in data %}
+<div class="donor-card">
+    <h3>{{ r[1] }}</h3>
+    <p>🩸 Blood Group: <b>{{ r[2] }}</b></p>
+    <p>🏙 City: {{ r[3] }}</p>
+    <p>📞 Phone: {{ r[4] }}</p>
+    <p>
+        <a href="/edit/{{ r[0] }}">Edit</a> |
+        <a href="/delete/{{ r[0] }}">Delete</a>
+    </p>
+</div>
+{% endfor %}
+
+</div>
+
+</body>
+</html>
