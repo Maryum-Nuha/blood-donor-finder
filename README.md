@@ -1,36 +1,158 @@
 # 🩸 Blood Donor Finder System
 
-A lightweight, secure, and user-friendly web application built with **Flask** and **SQLite3** to manage and find blood donors. This system allows authorized users to manage donor registries, perform fast searches based on blood group requirements, and maintain crucial record modifications securely.
+A lightweight and user-friendly web application built using **Flask** and **SQLite3** to manage blood donor records efficiently. The system helps users quickly search donors based on blood groups while securely maintaining donor information.
 
 ---
 
-## 🚀 Features
+# 🚀 Features
 
-*   **Secure Authentication:** Protected administrative portal preventing unauthorized donor directory manipulation.
-*   **Donor Onboarding Form:** Simple input panel on the home dashboard to log fresh donor profiles with native 10-digit phone validations.
-*   **Targeted Search Tool:** Dedicated interface allowing instant filtering of profiles based on requested blood groups.
-*   **Full CRUD Management:** View a master table of all registered donors with native permissions to **Edit** user info or **Delete** invalid entries.
-*   **Local Engine Data:** Zero external cloud dependencies; runs a lightweight self-contained SQL database wrapper locally (`donors.db`).
+✅ Secure Admin Login System  
+✅ Add New Donors  
+✅ Search Donors by Blood Group  
+✅ View Complete Donor History  
+✅ Edit Donor Information  
+✅ Delete Donor Records  
+✅ Automatic Date & Time Tracking  
+✅ Phone Number Validation  
+✅ Professional Red & White UI Design  
+✅ SQLite Local Database Support  
 
 ---
 
-## 📁 Directory Structure
+# 🛠️ Technologies Used
 
-Ensure your project folders align with this classic Flask directory layout to allow the static routing and templates to bind correctly:
+- Python
+- Flask
+- SQLite3
+- HTML5
+- CSS3
+
+---
+
+# 📁 Project Structure
 
 ```text
 blood-donor-finder/
 │
-├── app.py                 # Core application logic and routing configurations
-├── donors.db              # Local SQLite database instance (automatically created)
+├── app.py
+├── donors.db
+├── requirements.txt
 │
 ├── static/
-│   └── style.css          # Frontend layout aesthetic, responsive box structures
+│   └── style.css
 │
 └── templates/
-    ├── login.html         # Admin access authentication gateway
-    ├── index.html         # Home portal featuring the onboarding form
-    ├── search.html        # Dynamic database querying display
-    ├── donors.html        # Central master list showing all records 
-    └── edit.html          # Individual record updating form
-    # blood-donor-finder
+    ├── login.html
+    ├── index.html
+    ├── search.html
+    ├── donors.html
+    └── edit.html
+```
+
+---
+
+# ⚙️ Installation & Setup
+
+## 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/your-username/blood-donor-finder.git
+```
+
+---
+
+## 2️⃣ Open Project Folder
+
+```bash
+cd blood-donor-finder
+```
+
+---
+
+## 3️⃣ Install Requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 4️⃣ Run Application
+
+```bash
+python app.py
+```
+
+---
+
+# 🌐 Open In Browser
+
+```text
+http://127.0.0.1:5000/login
+```
+
+---
+
+# 🔐 Default Login Credentials
+
+```text
+Username: admin
+Password: admin123
+```
+
+---
+
+# 📊 Main Modules
+
+## 🏠 Home Page
+- Add donor details
+- Stores donor with current date & time
+
+## 🔍 Search Donor
+- Search donor by blood group
+- Displays “No Donors Found” if unavailable
+
+## 🩸 Donor History
+- Displays all donors
+- Latest donors shown first
+
+## ✏️ Edit Donor
+- Update donor details anytime
+
+## ❌ Delete Donor
+- Remove donor records permanently
+
+---
+
+# 🗄️ Database
+
+The project uses a lightweight local SQLite database:
+
+```text
+donors.db
+```
+
+Database is automatically created when the app runs.
+
+---
+
+# 🎯 Future Improvements
+
+- Dashboard Analytics
+- Blood Group Statistics Charts
+- Mobile Responsive Design
+- Online Deployment
+- Email Notifications
+- Hospital Integration
+
+---
+
+# 👨‍💻 Developed Using Flask
+
+A beginner-friendly mini project suitable for:
+- College Projects
+- Flask Learning
+- Database Management Practice
+- Web Development Practice
+
+---
