@@ -10,8 +10,6 @@ A lightweight and user-friendly web application built using **Flask** and **SQLi
 ✅ Add New Donors  
 ✅ Search Donors by Blood Group  
 ✅ View Complete Donor History  
-✅ Edit Donor Information  
-✅ Delete Donor Records  
 ✅ Automatic Date & Time Tracking  
 ✅ Phone Number Validation  
 ✅ Professional Red & White UI Design  
