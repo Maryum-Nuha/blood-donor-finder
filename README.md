@@ -115,13 +115,6 @@ Password: admin123
 ## 🩸 Donor History
 - Displays all donors
 - Latest donors shown first
-
-## ✏️ Edit Donor
-- Update donor details anytime
-
-## ❌ Delete Donor
-- Remove donor records permanently
-
 ---
 
 # 🗄️ Database
